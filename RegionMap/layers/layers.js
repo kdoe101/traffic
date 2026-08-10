@@ -86,21 +86,6 @@ var lyr_Landslides_5 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Landslides_5.png" /> Landslides'
             });
-var format_CO_Fires_2011_2020_6 = new ol.format.GeoJSON();
-var features_CO_Fires_2011_2020_6 = format_CO_Fires_2011_2020_6.readFeatures(json_CO_Fires_2011_2020_6, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_CO_Fires_2011_2020_6 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_CO_Fires_2011_2020_6.addFeatures(features_CO_Fires_2011_2020_6);
-var lyr_CO_Fires_2011_2020_6 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_CO_Fires_2011_2020_6, 
-                style: style_CO_Fires_2011_2020_6,
-                popuplayertitle: 'CO_Fires_2011_2020',
-                interactive: true,
-                title: '<img src="styles/legend/CO_Fires_2011_2020_6.png" /> CO_Fires_2011_2020'
-            });
 var format_RecordedAvalanches_7 = new ol.format.GeoJSON();
 var features_RecordedAvalanches_7 = format_RecordedAvalanches_7.readFeatures(json_RecordedAvalanches_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
